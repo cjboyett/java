@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cjboyett.dicestatistics.controller.DiceRollController">
+   <children>
+      <StackedBarChart fx:id="barChart" categoryGap="3.0" layoutX="121.0" layoutY="113.0" legendVisible="false" prefHeight="600.0" prefWidth="800.0" verticalGridLinesVisible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Times Rolled" minorTickCount="0" side="LEFT" tickUnit="1.0" />
+        </yAxis>
+      </StackedBarChart>
+   </children>
+</AnchorPane>

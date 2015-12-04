@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cjboyett.dicestatistics.controller.StatusBarController">
+   <children>
+      <HBox>
+         <children>
+            <ProgressIndicator fx:id="pi1" progress="0.0">
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </ProgressIndicator>
+            <ProgressIndicator fx:id="pi2" progress="0.0">
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </ProgressIndicator>
+            <ProgressIndicator fx:id="pi3" progress="0.0">
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </ProgressIndicator>
+            <ProgressIndicator fx:id="pi4" progress="0.0">
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </ProgressIndicator>
+         </children>
+      </HBox>
+      <Button fx:id="analysisButton" disable="true" layoutX="192.0" layoutY="8.0" mnemonicParsing="false" onAction="#analyzeDie" text="Analyze die" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="8.0" />
+      <Label fx:id="label" alignment="CENTER_RIGHT" layoutX="558.0" layoutY="6.0" prefWidth="100.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="3.0" />
+   </children>
+</AnchorPane>
